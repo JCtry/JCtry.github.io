@@ -1,27 +1,22 @@
 title: JCtry # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
+  JCtry</br>
   软件工程在读<br/>
+  小白程序员一枚！
   <a href="mailto:galaxy.chenjr@gmail.com">
     <i class="fas fa-envelope"></i>
   </a>
   <a href="https://github.com/JCtry">
     <i class="fab fa-github"></i>
   </a>
-  <a href="https://blog.csdn.net/JCtryK">
+  <a href="https://blog.csdn.net/JCtry">
     <i class="fas fa-csdn"></i>
   </a>
   <a href="https://gitee.com/JCtry">
     <i class="fab fa-gitee"></i>
   </a>
-  <iframe
-    src="//music.163.com/outchain/player?type=0&id=2361801605&auto=1&height=32"
-    width=100%
-    height=52
-    frameborder="no"
-    border="0"
-    marginwidth="0"
-    marginheight="0"
-  ></iframe>
+  <embed src="//music.163.com/style/swf/widget.swf?sid=2361801605&type=0&auto=1&width=278&height=32" width="298" height="52"  allowNetworking="all">
+  </embed>
 url: https://jctry.top # 你的域名
 baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
 
@@ -166,7 +161,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 href: /tags/
               - title: '<i class="fas fa-archive fa-fw"></i> 归档'
                 href: /archive/
-              - title: '<i class="fas fa-coffee fa-fw"></i> 打赏'
+              - title: '<i class="fas fa-coffee fa-fw"></i> .。'
                 href: /merger/
             simple_jekyll_search: # 侧边栏的全站搜索
               enable: true
@@ -336,7 +331,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
               - | # Copyright声明
                 <div>
                   <i class="fas fa-copyright fa-fw"></i>
-                  2017-2020 WuK
+                  2020-2020 JCtry
                 </div>
               # - | # 备案信息
               #   <div>
@@ -536,46 +531,46 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
           year_count: true
           toc: # 在正文里显示一个归档的目录
             enable: false
-        merger: # 打赏页，需要配置！
-          append_to_head:
-            - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
-              <script>
-                var usage = "payment";
-                var wechat = "wxp://f2f0FvTcDqTDlR9WRlOxUGW13cg-p1K70lEy";
-                // Alipay removed
-                var alipay = "https://qr.alipay.com/fkx11801gq1wt0ehcv4tc67";
-                // Alipay removed
-                var myname = "JCtry";
-                var profile = "https://i.loli.net/2020/07/09/3R1w5MskZaXmOWA.jpg";
-                var multilingual = true;
-                var myname_hans = "JCtry";
-                var myname_hant = "JCtry";
-                var myname_eng = "JCtry";
-                var title = "选择你的支付方式";
-                var subtitle = "跟随进一步的指示以向" + myname + "付款";
-                var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
-              </script>
-            - |
-              <meta
-                charset="utf-8"
-              />
-              <meta
-                name="viewport"
-                content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-              />
-              <meta
-                http-equiv="Content-Security-Policy"
-                content="upgrade-insecure-requests"
-              />
-            - | # merger的页面样式
-              <link
-                rel="stylesheet"
-                href="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.21.1/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.21.1/assets/styles/style.min.css"
-              />
-              <script
-                src='https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.21.1/assets/js/jQuery/jquery.min.js,gh/hifocus/merger@0.21.1/assets/js/jquery-qrcode/jquery-qrcode.min.js,gh/hifocus/merger@0.21.1/assets/js/JavaScript_MD5/md5.min.js,gh/hifocus/merger@0.21.1/assets/js/function.min.js,gh/hifocus/merger@0.21.1/assets/js/font_974919_xgtacm93vxp.min.js'
-                defer='defer'
-              ></script>
+        # merger: # 打赏页，需要配置！
+        #   append_to_head:
+        #     - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
+        #       <script>
+        #         var usage = "payment";
+        #         var wechat = "wxp://f2f0FvTcDqTDlR9WRlOxUGW13cg-p1K70lEy";
+        #         // Alipay removed
+        #         var alipay = "https://qr.alipay.com/fkx11801gq1wt0ehcv4tc67";
+        #         // Alipay removed
+        #         var myname = "JCtry";
+        #         var profile = "https://i.loli.net/2020/07/09/3R1w5MskZaXmOWA.jpg";
+        #         var multilingual = true;
+        #         var myname_hans = "JCtry";
+        #         var myname_hant = "JCtry";
+        #         var myname_eng = "JCtry";
+        #         var title = "选择你的支付方式";
+        #         var subtitle = "跟随进一步的指示以向" + myname + "付款";
+        #         var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
+        #       </script>
+        #     - |
+        #       <meta
+        #         charset="utf-8"
+        #       />
+        #       <meta
+        #         name="viewport"
+        #         content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        #       />
+        #       <meta
+        #         http-equiv="Content-Security-Policy"
+        #         content="upgrade-insecure-requests"
+        #       />
+        #     - | # merger的页面样式
+        #       <link
+        #         rel="stylesheet"
+        #         href="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.21.1/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.21.1/assets/styles/style.min.css"
+        #       />
+        #       <script
+        #         src='https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.21.1/assets/js/jQuery/jquery.min.js,gh/hifocus/merger@0.21.1/assets/js/jquery-qrcode/jquery-qrcode.min.js,gh/hifocus/merger@0.21.1/assets/js/JavaScript_MD5/md5.min.js,gh/hifocus/merger@0.21.1/assets/js/function.min.js,gh/hifocus/merger@0.21.1/assets/js/font_974919_xgtacm93vxp.min.js'
+        #         defer='defer'
+        #       ></script>
         home: # 展示页的配置可跳过，详见<https://revealjs.com/>
           append_to_section_tag:
             - key: data-markdown
