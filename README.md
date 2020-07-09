@@ -1,6 +1,6 @@
 # 愿浮生如厮，闲适淡然。
 
-~~最是凝眸无限意，似曾相逢在前生~~
+最是凝眸无限意，似曾相逢在前生~
 
 <!-- .slide -->
 
@@ -11,8 +11,6 @@
 <!-- .slide -->
 
 ## Skill
-
-<!-- .slide vertical=true -->
 
 - **C/C++**, Familiar&Learning
 - **JAVA**, Familiar&Learning

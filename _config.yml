@@ -1,6 +1,5 @@
 title: JCtry # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
-  <center>JCtry</center></br>
   软件工程在读<br/>
   小白程序员一枚！</br>
   <a href="mailto:galaxy.chenjr@gmail.com">
@@ -15,7 +14,14 @@ description: | # 头像背后的信息（html格式），<br/>代表换行
   <a href="https://gitee.com/JCtry">
     <i class="fab fa-gitee"></i>
   </a>
-  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=0&id=748089523&auto=1&height=32">
+  <iframe 
+    frameborder="no" 
+    border="0" 
+    marginwidth="0" 
+    marginheight="0" 
+    width=100% 
+    height=52 
+    src="//music.163.com/outchain/player?type=0&id=748089523&auto=1&height=32">
   </iframe>
 url: https://jctry.top # 你的域名
 baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
@@ -28,7 +34,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
         default:
           body:
             theme-base: theme-base-07 # 可选的主题色包括08~0f，见 <https://github.com/poole/lanyon>
-            layout-reverse: false # 开启后sidebar在右边，反之左边
+            layout-reverse: true # 开启后sidebar在右边，反之左边
             sidebar-overlay: true # 开启后正文不随sidebar移动而移动
           append_to_head: # 通过内嵌html的方式引入并定制插件，删改前确定知道自己在做什么。定制插件的方式可以参考这篇文章 <https://wu-kan.cn/_posts/2019-01-18-基于Jekyll搭建个人博客/>
             - | #一些页面优化标签，看不懂可跳过
@@ -66,6 +72,72 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 async="async"
                 src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/js/all.min.js"
               ></script>
+            - | # 引入live2d看板娘！不需要可以把这一项都删掉
+              <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
+              />
+              <script
+                async="async"
+                src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
+                onload='
+                    let pio_container = document.createElement("div");
+                    pio_container.classList.add("pio-container");
+                    pio_container.classList.add("right");
+                    pio_container.style.bottom = "-2rem";
+                    pio_container.style.zIndex = "1";
+                    document.body.insertAdjacentElement("beforeend", pio_container);
+                    let pio_action = document.createElement("div");
+                    pio_action.classList.add("pio-action");
+                    pio_container.insertAdjacentElement("beforeend", pio_action);
+                    let pio_canvas = document.createElement("canvas");
+                    pio_canvas.id = "pio";
+                    pio_canvas.style.width = "14rem";
+                    pio_canvas.width = "600";
+                    pio_canvas.height = "800";
+                    pio_container.insertAdjacentElement("beforeend", pio_canvas);
+                    let pio = new Paul_Pio({
+                      "mode": "fixed",
+                      "hidden": true,
+                      "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
+                      "content": {
+                        "link": ["https:\/\/jekyll-theme-WuK.wu-kan.cn"],
+                        "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
+                        "hidden": true,
+                        "custom": [{
+                          "selector": "a",
+                          "type": "link",
+                        }, {
+                          "selector": ".sidebar-toggle",
+                          "text": "打开侧边栏叭~"
+                        }, {
+                          "selector": ".effect-info",
+                          "text": "哇，你发现了什么！"
+                        }, {
+                          "selector": "#sidebar-search-input",
+                          "text": "想搜索什么呢？很多干货哦！"
+                        }, {
+                          "selector": "#toc",
+                          "text": "这是目录~"
+                        }, {
+                          "selector": ".page-title",
+                          "text": "这是标题~"
+                        }, {
+                          "selector": ".v",
+                          "text": "评论没有审核，要对自己的发言负责哦~"
+                        }]
+                      },
+                      "model": [
+                        "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/33/model.2018.bls-winter.json",
+                        "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/platelet-2/model.json",
+                        "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/xiaomai/xiaomai.model.json",
+                        "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/mashiro/seifuku.model.json",
+                        "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/Violet/14.json",
+                        "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/Kobayaxi/Kobayaxi.model.json",
+                        "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/mikoto/mikoto.model.json",
+                        "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/uiharu/uiharu.model.json"]
+                    });'
+              ></script>
             - | # 百度爬虫推送，http站点使用 http://push.zhanzhang.baidu.com/push.js
               <script
                 src='https://zz.bdstatic.com/linksubmit/push.js'
@@ -83,11 +155,11 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   background-position: 0% 0%;
                   background-repeat: no-repeat;
                   background-attachment: fixed;
-                  background-image: url(https://i.loli.net/2020/07/09/AopOF2XHzirbSJG.jpg);
+                  background-image: url(https://i.loli.net/2020/07/09/jXKOhlEQo8H1dDs.jpg);
                 }
                 @media (min-aspect-ratio: 2400/1850) {
                   .wrap {
-                    background-image: url(https://i.loli.net/2020/07/09/AopOF2XHzirbSJG.jpg);
+                    background-image: url(https://i.loli.net/2020/07/09/PDB2nyIYeFqub5L.jpg);
                   }
                 }
                 .sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
@@ -151,7 +223,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             disable: false # 是否不显示sidebar
             avatar: # 侧边栏显示的头像
               enable: true
-              img: https://i.loli.net/2020/07/09/3R1w5MskZaXmOWA.jpg # 头像的地址
+              img: https://i.loli.net/2020/07/09/G5tYlzs8pyiuD1C.jpg # 头像的地址
             nav: # 导航部分的内容，你也可以自己增加文字、图标（来自fontawesome）和对应的链接
               - title: '<i class="fas fa-home fa-fw"></i> 首页'
                 href: /
@@ -161,8 +233,8 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 href: /tags/
               - title: '<i class="fas fa-archive fa-fw"></i> 归档'
                 href: /archive/
-              # - title: '<i class="fas fa-coffee fa-fw"></i> .。'
-              #   href: /merger/
+              - title: '<i class="fas fa-coffee fa-fw"></i> 打赏'
+                href: /merger/
             simple_jekyll_search: # 侧边栏的全站搜索
               enable: true
               full_text_search: false # 可能导致缓慢的搜索和加载
@@ -531,46 +603,44 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
           year_count: true
           toc: # 在正文里显示一个归档的目录
             enable: false
-        # merger: # 打赏页，需要配置！
-        #   append_to_head:
-        #     - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
-        #       <script>
-        #         var usage = "payment";
-        #         var wechat = "wxp://f2f0FvTcDqTDlR9WRlOxUGW13cg-p1K70lEy";
-        #         // Alipay removed
-        #         var alipay = "https://qr.alipay.com/fkx11801gq1wt0ehcv4tc67";
-        #         // Alipay removed
-        #         var myname = "JCtry";
-        #         var profile = "https://i.loli.net/2020/07/09/3R1w5MskZaXmOWA.jpg";
-        #         var multilingual = true;
-        #         var myname_hans = "JCtry";
-        #         var myname_hant = "JCtry";
-        #         var myname_eng = "JCtry";
-        #         var title = "选择你的支付方式";
-        #         var subtitle = "跟随进一步的指示以向" + myname + "付款";
-        #         var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
-        #       </script>
-        #     - |
-        #       <meta
-        #         charset="utf-8"
-        #       />
-        #       <meta
-        #         name="viewport"
-        #         content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        #       />
-        #       <meta
-        #         http-equiv="Content-Security-Policy"
-        #         content="upgrade-insecure-requests"
-        #       />
-        #     - | # merger的页面样式
-        #       <link
-        #         rel="stylesheet"
-        #         href="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.21.1/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.21.1/assets/styles/style.min.css"
-        #       />
-        #       <script
-        #         src='https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.21.1/assets/js/jQuery/jquery.min.js,gh/hifocus/merger@0.21.1/assets/js/jquery-qrcode/jquery-qrcode.min.js,gh/hifocus/merger@0.21.1/assets/js/JavaScript_MD5/md5.min.js,gh/hifocus/merger@0.21.1/assets/js/function.min.js,gh/hifocus/merger@0.21.1/assets/js/font_974919_xgtacm93vxp.min.js'
-        #         defer='defer'
-        #       ></script>
+        merger: # 打赏页，需要配置！
+          append_to_head:
+            - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
+              <script>
+                var usage = "payment";
+                var wechat = "wxp://f2f0FvTcDqTDlR9WRlOxUGW13cg-p1K70lEy";
+                var alipay = "https://qr.alipay.com/fkx11801gq1wt0ehcv4tc67";
+                var myname = "JCtry";
+                var profile = "https://i.loli.net/2020/07/09/3R1w5MskZaXmOWA.jpg";
+                var multilingual = true;
+                var myname_hans = "JCtry";
+                var myname_hant = "JCtry";
+                var myname_eng = "JCtry";
+                var title = "选择你的支付方式";
+                var subtitle = "跟随进一步的指示以向" + myname + "付款";
+                var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
+              </script>
+            - |
+              <meta
+                charset="utf-8"
+              />
+              <meta
+                name="viewport"
+                content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+              />
+              <meta
+                http-equiv="Content-Security-Policy"
+                content="upgrade-insecure-requests"
+              />
+            - | # merger的页面样式
+              <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.21.1/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.21.1/assets/styles/style.min.css"
+              />
+              <script
+                src='https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.21.1/assets/js/jQuery/jquery.min.js,gh/hifocus/merger@0.21.1/assets/js/jquery-qrcode/jquery-qrcode.min.js,gh/hifocus/merger@0.21.1/assets/js/JavaScript_MD5/md5.min.js,gh/hifocus/merger@0.21.1/assets/js/function.min.js,gh/hifocus/merger@0.21.1/assets/js/font_974919_xgtacm93vxp.min.js'
+                defer='defer'
+              ></script>
         home: # 展示页的配置可跳过，详见<https://revealjs.com/>
           append_to_section_tag:
             - key: data-markdown
