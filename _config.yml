@@ -1,19 +1,26 @@
 title: JCtry # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
-  &nbsp;&nbsp;软件工程17级在读<br/><br/>
-  &nbsp;&nbsp;&nbsp;小白程序员一个<br/><br/><br/>
+  <br/><br/><br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;软件工程17级在读<br/><br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;小白程序员一个<br/><br/><br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="mailto:galaxy.chenjr@gmail.com">
     <i class="fas fa-envelope"></i>
   </a>
+  &nbsp;&nbsp;&nbsp;
   <a href="https://github.com/JCtry">
     <i class="fab fa-github"></i>
   </a>
+  <br/>
+  &nbsp;&nbsp;&nbsp;
   <a href="https://blog.csdn.net/JCtry">
     <i class="fas fa-book"></i>
   </a>
+  &nbsp;&nbsp;&nbsp;
   <a href="https://gitee.com/JCtry">
     <i class="fab fa-bookmark"></i>
   </a>
+  &nbsp;&nbsp;&nbsp;
   <a href="https://www.zhihu.com/people/jctry">
     <i class="fab fa-zhihu"></i>
   </a>
