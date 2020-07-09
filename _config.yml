@@ -1,8 +1,8 @@
 title: JCtry # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
-  JCtry</br>
+  <center>JCtry</center></br>
   软件工程在读<br/>
-  小白程序员一枚！
+  小白程序员一枚！</br>
   <a href="mailto:galaxy.chenjr@gmail.com">
     <i class="fas fa-envelope"></i>
   </a>
@@ -15,8 +15,8 @@ description: | # 头像背后的信息（html格式），<br/>代表换行
   <a href="https://gitee.com/JCtry">
     <i class="fab fa-gitee"></i>
   </a>
-  <embed src="//music.163.com/style/swf/widget.swf?sid=2361801605&type=0&auto=1&width=278&height=32" width="298" height="52"  allowNetworking="all">
-  </embed>
+  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=0&id=748089523&auto=1&height=32">
+  </iframe>
 url: https://jctry.top # 你的域名
 baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
 
@@ -28,7 +28,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
         default:
           body:
             theme-base: theme-base-07 # 可选的主题色包括08~0f，见 <https://github.com/poole/lanyon>
-            layout-reverse: true # 开启后sidebar在右边，反之左边
+            layout-reverse: false # 开启后sidebar在右边，反之左边
             sidebar-overlay: true # 开启后正文不随sidebar移动而移动
           append_to_head: # 通过内嵌html的方式引入并定制插件，删改前确定知道自己在做什么。定制插件的方式可以参考这篇文章 <https://wu-kan.cn/_posts/2019-01-18-基于Jekyll搭建个人博客/>
             - | #一些页面优化标签，看不懂可跳过
@@ -49,12 +49,12 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             - | # 网站小图标，可换成你自己的图片，改href中的部分即可
               <link
                 rel="apple-touch-icon-precomposed"
-                href="https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320"
+                href="https://i.loli.net/2020/07/09/41fYhy82xW7IMTm.png"
               />
               <link
                 rel="shortcut
                 icon"
-                href="https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=32"
+                href="https://i.loli.net/2020/07/09/41fYhy82xW7IMTm.png"
               />
             - | # 来自lanyon的页面样式，不要改
               <link
@@ -83,11 +83,11 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   background-position: 0% 0%;
                   background-repeat: no-repeat;
                   background-attachment: fixed;
-                  background-image: url(https://Mizuno-Ai.wu-kan.cn/pixiv/74559485_p1.webp);
+                  background-image: url(https://i.loli.net/2020/07/09/AopOF2XHzirbSJG.jpg);
                 }
                 @media (min-aspect-ratio: 2400/1850) {
                   .wrap {
-                    background-image: url(https://Mizuno-Ai.wu-kan.cn/pixiv/71932901_p0.webp);
+                    background-image: url(https://i.loli.net/2020/07/09/AopOF2XHzirbSJG.jpg);
                   }
                 }
                 .sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
@@ -161,8 +161,8 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 href: /tags/
               - title: '<i class="fas fa-archive fa-fw"></i> 归档'
                 href: /archive/
-              - title: '<i class="fas fa-coffee fa-fw"></i> .。'
-                href: /merger/
+              # - title: '<i class="fas fa-coffee fa-fw"></i> .。'
+              #   href: /merger/
             simple_jekyll_search: # 侧边栏的全站搜索
               enable: true
               full_text_search: false # 可能导致缓慢的搜索和加载
