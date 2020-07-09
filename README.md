@@ -12,9 +12,9 @@
 
 ## Skill
 
-- **C/C++**, Familiar&Learning
-- **JAVA**, Familiar&Learning
-- **Python**, Familiar
+- **C/C++**, understand&Learning
+- **JAVA**, understand&Learning
+- **Python**, Familiar&Learning
 - **Linux**, Familiar&Learning
-- **VSCode**, Familiar
+- **VSCode**, understand
 

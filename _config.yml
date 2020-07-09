@@ -1,7 +1,7 @@
 title: JCtry # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
-  软件工程在读<br/>
-  小白程序员一枚！</br>
+  小白程序员一枚！<br/>
+  软件工程在读</br>
   <a href="mailto:galaxy.chenjr@gmail.com">
     <i class="fas fa-envelope"></i>
   </a>
@@ -9,13 +9,13 @@ description: | # 头像背后的信息（html格式），<br/>代表换行
     <i class="fab fa-github"></i>
   </a>
   <a href="https://blog.csdn.net/JCtry">
-    <i class="fas fa-csdn"></i>
+    <i class="fas fa-smile"></i>
   </a>
   <a href="https://gitee.com/JCtry">
-    <i class="fab fa-gitee"></i>
+    <i class="fab fa-cloud"></i>
   </a>
   <iframe
-    src="https://music.163.com/outchain/player?type=0&id=2361801605&auto=0&height=32"
+    src="https://music.163.com/outchain/player?type=0&id=155059595&auto=1&height=32"
     width=100%
     height=52
     frameborder="no"
@@ -101,7 +101,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                       "hidden": true,
                       "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
                       "content": {
-                        "link": ["https:\/\/jekyll-theme-WuK.wu-kan.cn"],
+                        "link": ["https://github.com/JCtry"],
                         "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
                         "hidden": true,
                         "custom": [{
