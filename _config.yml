@@ -1,7 +1,7 @@
 title: JCtry # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
-  软件工程17级在读<br/>
-  小白程序员一个<br/>
+  &nbsp;&nbsp;软件工程17级在读<br/><br/>
+  &nbsp;&nbsp;&nbsp;小白程序员一个<br/><br/><br/>
   <a href="mailto:galaxy.chenjr@gmail.com">
     <i class="fas fa-envelope"></i>
   </a>
@@ -17,21 +17,7 @@ description: | # 头像背后的信息（html格式），<br/>代表换行
   <a href="https://www.zhihu.com/people/jctry">
     <i class="fab fa-zhihu"></i>
   </a>
-  <link rel="stylesheet" href="https://blog-static.cnblogs.com/files/lihanqing/APlayer.min.css">
-  <script src="https://blog-static.cnblogs.com/files/lihanqing/APlayer.min.js"></script>
-  <script src="https://blog-static.cnblogs.com/files/lihanqing/Meting.min.js"></script>
-  <div id="player" 
-  class="aplayer 
-  aplayer-withlist 
-  aplayer-fixed" 
-  data-id="492149262"
-  data-server="netease" 
-  data-type="playlist" 
-  data-order="random" 
-  data-fixed="true" 
-  data-listfolded="true" 
-  data-theme="orange"
-  ></div>
+
 url: https://jctry.top # 你的域名
 baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
 
