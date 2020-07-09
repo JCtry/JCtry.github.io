@@ -12,8 +12,7 @@ tags:
 
 # GitHub Desktop的安装
 
-参考  **GitHub Desktop的安装和使用<2020.7.8>**
-[https://blog.csdn.net/JCtry/article/details/107198217](http://jctry.top/_posts/2020-07-08-GitHub-Desktop%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/)
+参考 [ **GitHub Desktop的安装和使用**](http://jctry.top/_posts/2020-07-08-GitHub-Desktop%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/)
 
 # GitHub Desktop的汉化
 **lkyero 的汉化软件 GitHub下载地址（更新中）**
