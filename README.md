@@ -5,7 +5,7 @@
 ## Profile
 
 - Address: **Shan xi, China**
-
+- Nmae: **Mr.Chen**
 <!-- .slide -->
 
 ## Skill
@@ -18,4 +18,4 @@
 
 <!-- .slide -->
 
-# 最是凝眸无限意，似曾相逢在前生~
+## 最是凝眸无限意，似曾相逢在前生~
