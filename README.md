@@ -10,8 +10,6 @@
 
 ## Skill
 
-- **C/C++**, understand&Learning
-- **JAVA**, understand&Learning
 - **Python**, Familiar&Learning
 - **Linux**, Familiar&Learning
 - **VSCode**, understand
@@ -19,3 +17,4 @@
 <!-- .slide -->
 
 ## 最是凝眸无限意，似曾相逢在前生~
+
